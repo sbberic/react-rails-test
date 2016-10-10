@@ -37,4 +37,4 @@ gem "react_on_rails", "~> 6"
 # To use debugger
 # gem 'debugger'
 
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
