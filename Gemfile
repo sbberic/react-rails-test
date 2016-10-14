@@ -8,7 +8,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg'
+  gem 'mysql2', '0.3.20'
 end
 
 # Gems used only for assets and not required

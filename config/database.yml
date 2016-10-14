@@ -10,7 +10,15 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  database: react_rails_test_prod
+  adapter: mysql2
+  encoding: utf8
+  database: lookstaging
+  pool: 5
+  timeout: 5000
+  host: lookmazing-staging.czvl1ctulmpr.us-east-1.rds.amazonaws.com
+  username: ehan
+  password: lmiscool
+  port: 3306
+  socket: /tmp/mysql.sock
   pool: 5
   timeout: 5000
