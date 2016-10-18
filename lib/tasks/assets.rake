@@ -1,5 +1,3 @@
-require "react_on_rails/assets_precompile"
-
 namespace :react_on_rails do
   namespace :assets do
     desc "Creates non-digested symlinks for the assets in the public asset dir"
