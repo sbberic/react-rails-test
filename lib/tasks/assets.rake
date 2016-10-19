@@ -39,13 +39,13 @@ sh "cd client && `ReactOnRails.configuration.npm_build_production_command`"
     end
   end
 end
-Rake::Task["environment"].enhance do
-  sh "env | grep DATABASE"
-end
 
 # These tasks run as pre-requisites of assets:precompile.
 # Note, it's not possible to refer to ReactOnRails configuration values at this point.
 Rake::Task["assets:precompile"]
+  .enhance do
+    sh "env | grep DATABASE"
+  end
   .clear_prerequisites
   .enhance(["react_on_rails:assets:compile_environment"])
   .enhance do
