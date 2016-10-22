@@ -1,24 +1,16 @@
 development:
-  adapter: mysql2
-  database: lookstaging
+  adapter: postgres
+  database: dev
   pool: 5
   timeout: 5000
 test:
-  adapter: mysql2
-  database: lookstaging
+  adapter: postgres
+  database: test
   pool: 5
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: postgres
   encoding: utf8
-  database: lookstaging
+  database: prod
   pool: 5
-  timeout: 5000
-  host: lookmazing-staging.czvl1ctulmpr.us-east-1.rds.amazonaws.com
-  username: ehan
-  password: lmiscool
-  port: 3306
-  socket: /tmp/mysql.sock
-  pool: 5
-  timeout: 5000
